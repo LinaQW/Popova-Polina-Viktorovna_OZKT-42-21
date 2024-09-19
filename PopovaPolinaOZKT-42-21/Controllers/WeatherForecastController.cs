@@ -1,7 +1,5 @@
+
 using Microsoft.AspNetCore.Mvc;
-
-
-
 
 namespace PopovaPolinaOZKT_42_21.Controllers
 {
