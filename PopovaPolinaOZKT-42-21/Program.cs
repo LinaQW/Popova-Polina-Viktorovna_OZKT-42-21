@@ -38,9 +38,6 @@ try
         app.UseSwaggerUI();
     }
 
-    app.UseMiddleware<ExceptionHandlerMiddleware>();
-
-    // app.UseExceptionHandler(o => { }); // Works
 
     app.UseAuthorization();
 
