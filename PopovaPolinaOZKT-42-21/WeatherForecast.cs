@@ -1,4 +1,4 @@
-namespace PopovaPolinaOZKT_42_21
+/*namespace PopovaPolinaOZKT_42_21
 {
     public class WeatherForecast
     {
@@ -10,4 +10,4 @@ namespace PopovaPolinaOZKT_42_21
 
         public string? Summary { get; set; }
     }
-}
+}*/

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
 using PopovaPolinaOZKT_42_21.DataBase;
-//using static PopovaPolinaOZKT_42_21.ServiceExtensions.ServiceExtensions;
+using static PopovaPolinaOZKT_42_21.ServiceExtensions.ServiceExtensions;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -24,10 +24,7 @@ try
         options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
-
-
-    // builder.Services.AddServices();
-    // AddCustomServices(builder.Services);
+     builder.Services.AddServices();
 
     var app = builder.Build();
 
