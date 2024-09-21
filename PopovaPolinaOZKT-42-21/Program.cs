@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
+using System.Reflection.PortableExecutable;
+//using Microsoft.AspNetCore.Diagnostics;
 using PopovaPolinaOZKT_42_21.DataBase;
 using static PopovaPolinaOZKT_42_21.ServiceExtensions.ServiceExtensions;
 
@@ -26,14 +28,16 @@ try
 
      builder.Services.AddServices();
 
+
     var app = builder.Build();
 
-    // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();
         app.UseSwaggerUI();
     }
+
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
 
 
     app.UseAuthorization();

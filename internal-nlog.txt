@@ -327,3 +327,38 @@ File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
 2024-09-21 12:42:20.7348 Info Configuration initialized.
 2024-09-21 12:42:21.0298 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
 2024-09-21 12:42:21.0298 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-21 21:38:56.5445 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-21 21:38:56.6453 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-21 21:38:56.9994 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-21 21:38:57.0375 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-21 21:38:57.0793 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-21 21:38:57.1257 Info Configuration initialized.
+2024-09-21 21:38:57.6595 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-21 21:38:57.6651 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-21 22:01:18.9903 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-21 22:01:19.0291 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-21 22:01:19.5184 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-21 22:01:19.5284 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-21 22:01:19.5946 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-21 22:01:19.6364 Info Configuration initialized.
+2024-09-21 22:01:20.5178 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-21 22:01:20.5232 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-21 22:01:26.1131 Info Shutdown() called. Logger closing...
+2024-09-21 22:01:26.2537 Info Closing old configuration.
+2024-09-21 22:01:26.7678 Info Logger has been closed down.

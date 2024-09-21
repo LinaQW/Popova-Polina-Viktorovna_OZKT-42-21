@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
 using PopovaPolinaOZKT_42_21.Filters.StudentFilters;
 using PopovaPolinaOZKT_42_21.Interfaces.StudentsInterfaces;
 //using PopovaPolinaOZKT_42_21.Interfaces.StudentsInterfaces;
@@ -19,7 +18,7 @@ namespace PopovaPolinaOZKT_42_21.Controllers
             _studentService = studentService;
         }
 
-        [HttpPost(Name = "GetStudentsByGroup")]
+        [HttpPost( "GetStudentsByGroup")]
         public async Task<IActionResult> GetStudentsByGroupAsync(StudentGroupFilter filter, CancellationToken cancellationToken = default)
         {
             var students = await _studentService.GetStudentsByGroupAsync(filter, cancellationToken);
