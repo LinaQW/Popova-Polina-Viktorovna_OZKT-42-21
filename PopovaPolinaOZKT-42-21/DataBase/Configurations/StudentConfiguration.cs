@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 //using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PopovaPolinaOZKT_42_21.DataBase.Helpers;
 using PopovaPolinaOZKT_42_21.DataBase.Models;
 

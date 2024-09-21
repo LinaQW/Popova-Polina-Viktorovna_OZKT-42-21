@@ -7,9 +7,11 @@ namespace PopovaPolinaOZKT_42_21.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+
         private static readonly string[] Summaries = new[]
         {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -31,15 +33,14 @@ namespace PopovaPolinaOZKT_42_21.Controllers
             })
             .ToArray();
         }
-
         [HttpPost(Name = "AddNewSummary")]
         public string[] AddNewSummary(string newSummary)
         {
-            _logger.LogError("Method was called");
-
+            _logger.LogError("New method was called");
             var list = Summaries.ToList();
             list.Add(newSummary);
             return list.ToArray();
         }
     }
 }
+

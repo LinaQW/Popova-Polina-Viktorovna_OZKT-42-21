@@ -1,15 +1,13 @@
-using PopovaPolinaOZKT_42_21.DataBase;
+using Microsoft.AspNetCore.Diagnostics;
 //using PopovaPolinaOZKT_42_21.Middlewares;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
-using System.Reflection.PortableExecutable;
-using Microsoft.AspNetCore.Diagnostics;
+using PopovaPolinaOZKT_42_21.DataBase;
 //using static PopovaPolinaOZKT_42_21.ServiceExtensions.ServiceExtensions;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 
 try
@@ -23,11 +21,10 @@ try
     builder.Services.AddSwaggerGen();
 
     builder.Services.AddDbContext<StudentDbContext>(options =>
-       options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-    /* var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-     builder.Services.AddDbContext<student_db>(options =>
-     options.UseSqlServer(connectionString));*/
+
+
 
     // builder.Services.AddServices();
     // AddCustomServices(builder.Services);
@@ -43,11 +40,14 @@ try
 
     app.UseMiddleware<ExceptionHandlerMiddleware>();
 
+    // app.UseExceptionHandler(o => { }); // Works
+
     app.UseAuthorization();
 
     app.MapControllers();
 
     app.Run();
+
 }
 catch (Exception ex)
 {
