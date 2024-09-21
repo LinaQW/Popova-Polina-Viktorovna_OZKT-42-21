@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PopovaPolinaOZKT-42-21", "PopovaPolinaOZKT-42-21\PopovaPolinaOZKT-42-21.csproj", "{006FAF8B-4864-4E52-BD4F-4CCABC543FCA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopovaPolinaOZKT-42-21.Tests", "PopovaPolinaOZKT-42-21.Tests\PopovaPolinaOZKT-42-21.Tests.csproj", "{10AA2376-8145-49D9-9AD6-D125FC048633}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopovaPolinaOZKT-42-21", "PopovaPolinaOZKT-42-21\PopovaPolinaOZKT-42-21.csproj", "{006FAF8B-4864-4E52-BD4F-4CCABC543FCA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +15,6 @@ Global
 		{006FAF8B-4864-4E52-BD4F-4CCABC543FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{006FAF8B-4864-4E52-BD4F-4CCABC543FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{006FAF8B-4864-4E52-BD4F-4CCABC543FCA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10AA2376-8145-49D9-9AD6-D125FC048633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10AA2376-8145-49D9-9AD6-D125FC048633}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10AA2376-8145-49D9-9AD6-D125FC048633}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10AA2376-8145-49D9-9AD6-D125FC048633}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
