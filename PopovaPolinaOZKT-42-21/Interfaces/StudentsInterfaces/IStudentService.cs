@@ -2,6 +2,7 @@
 using PopovaPolinaOZKT_42_21.DataBase;
 using PopovaPolinaOZKT_42_21.Filters.StudentFilters;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PopovaPolinaOZKT_42_21.Interfaces.StudentsInterfaces
 {
@@ -12,7 +13,8 @@ namespace PopovaPolinaOZKT_42_21.Interfaces.StudentsInterfaces
 
     public class StudentService : IStudentService
     {
-        private readonly StudentDbContext _dbContext;
+        // private readonly StudentDbContext _dbContext;
+        private StudentDbContext _dbContext;
         public StudentService(StudentDbContext dbContext)
         {
             _dbContext = dbContext;

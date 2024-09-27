@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Diagnostics;
-//using PopovaPolinaOZKT_42_21.Middlewares;
+using PopovaPolinaOZKT_42_21.Middlewares;
 using Microsoft.EntityFrameworkCore;
 using NLog;
 using NLog.Web;
@@ -37,8 +37,7 @@ try
         app.UseSwaggerUI();
     }
 
-    app.UseMiddleware<ExceptionHandlerMiddleware>();
-
+    app.UseMiddleware<PopovaPolinaOZKT_42_21.Middlewares.ExceptionHandlerMiddleware>();
 
     app.UseAuthorization();
 

@@ -362,3 +362,249 @@ File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
 2024-09-21 22:01:26.1131 Info Shutdown() called. Logger closing...
 2024-09-21 22:01:26.2537 Info Closing old configuration.
 2024-09-21 22:01:26.7678 Info Logger has been closed down.
+2024-09-26 08:34:17.7709 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 08:34:17.8206 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 08:34:18.0222 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 08:34:18.0345 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 08:34:18.0496 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:34:18.1009 Info Configuration initialized.
+2024-09-26 08:35:07.0098 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:35:07.0179 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:37:29.6023 Info Shutdown() called. Logger closing...
+2024-09-26 08:37:29.6023 Info Closing old configuration.
+2024-09-26 08:37:29.6406 Info Logger has been closed down.
+2024-09-26 08:38:09.9758 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 08:38:10.0025 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 08:38:10.2415 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 08:38:10.2538 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 08:38:10.2696 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:38:10.3261 Info Configuration initialized.
+2024-09-26 08:42:10.1775 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:42:10.1775 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:46:13.3632 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 08:46:13.3916 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 08:46:13.6159 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 08:46:13.6159 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 08:46:13.6809 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:46:13.7213 Info Configuration initialized.
+2024-09-26 08:47:05.7528 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:47:05.7528 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:54:08.2533 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 08:54:08.2710 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 08:54:08.3877 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 08:54:08.3986 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 08:54:08.4137 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:54:08.4471 Info Configuration initialized.
+2024-09-26 08:54:08.6063 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:54:08.6063 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 08:54:08.7328 Info Shutdown() called. Logger closing...
+2024-09-26 08:54:08.7328 Info Closing old configuration.
+2024-09-26 08:54:08.7491 Info Logger has been closed down.
+2024-09-26 09:31:13.7497 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 09:31:13.8024 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 09:31:14.0297 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 09:31:14.0415 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 09:31:14.0644 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 09:31:14.1077 Info Configuration initialized.
+2024-09-26 09:31:14.4870 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 09:31:14.5035 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:04:30.9217 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 10:04:30.9888 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 10:04:31.2061 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 10:04:31.2061 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 10:04:31.2278 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:04:31.2552 Info Configuration initialized.
+2024-09-26 10:04:31.5853 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:04:31.5853 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:25:47.9805 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 10:25:48.1674 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 10:25:48.5695 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 10:25:48.5902 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 10:25:48.6154 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:25:48.6928 Info Configuration initialized.
+2024-09-26 10:25:49.1506 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:25:49.1506 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:37:31.7746 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 10:37:31.8421 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 10:37:32.1188 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 10:37:32.1339 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 10:37:32.1478 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:37:32.1803 Info Configuration initialized.
+2024-09-26 10:37:32.7339 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:37:32.7417 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:43:48.9785 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 10:43:49.0275 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 10:43:49.2858 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 10:43:49.2858 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 10:43:49.3153 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:43:49.3520 Info Configuration initialized.
+2024-09-26 10:43:49.7771 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:43:49.7771 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:46:07.8956 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 10:46:07.9374 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 10:46:08.3833 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 10:46:08.3961 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 10:46:08.4148 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:46:08.4486 Info Configuration initialized.
+2024-09-26 10:46:08.9696 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:46:08.9773 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:55:54.2249 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 10:55:54.2785 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 10:55:54.5796 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 10:55:54.5996 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 10:55:54.6192 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:55:54.6945 Info Configuration initialized.
+2024-09-26 10:55:55.0693 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 10:55:55.0693 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 11:09:33.9931 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 11:09:34.0466 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 11:09:34.2887 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 11:09:34.3061 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 11:09:34.3253 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 11:09:34.3716 Info Configuration initialized.
+2024-09-26 11:09:34.8018 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 11:09:34.8018 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 11:37:31.9656 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-26 11:37:32.0289 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-26 11:37:32.2567 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-26 11:37:32.2738 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-26 11:37:32.2934 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 11:37:32.3235 Info Configuration initialized.
+2024-09-26 11:37:32.6988 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-26 11:37:32.6988 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-27 09:03:56.2571 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-27 09:03:56.3150 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-27 09:03:56.5313 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-27 09:03:56.5313 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-27 09:03:56.5585 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-27 09:03:56.5951 Info Configuration initialized.
+2024-09-27 09:03:56.9877 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-27 09:03:56.9877 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-27 09:24:15.3532 Info Loading assembly name: NLog.Web.AspNetCoreV2
+2024-09-27 09:24:15.4014 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCoreV2
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'. Не удается найти указанный файл.
+File name: 'NLog.Web.AspNetCoreV2, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-09-27 09:24:15.6908 Info Registered target NLog.Targets.FileTarget(Name=my-file)
+2024-09-27 09:24:15.7045 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.2778. Product version: 5.3.4+73d83d3161d31288ca5c554cc50d27b6bed5f28b. GlobalAssemblyCache: False
+2024-09-27 09:24:15.7202 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-27 09:24:15.7645 Info Configuration initialized.
+2024-09-27 09:24:16.0928 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog
+2024-09-27 09:24:16.0974 Info Validating config: TargetNames=my-file, ConfigItems=24 ConfigSection=NLog

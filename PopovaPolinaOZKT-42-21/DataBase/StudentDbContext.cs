@@ -8,8 +8,8 @@ namespace PopovaPolinaOZKT_42_21.DataBase
     public class StudentDbContext : DbContext
     {
         //Добавляем таблицы
-        DbSet<Student> Students { get; set; }
-        DbSet<Group> Groups { get; set; }
+        public DbSet<Student> Students { get; set; }
+        public DbSet<Group> Groups { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -18,8 +18,9 @@ namespace PopovaPolinaOZKT_42_21.DataBase
             modelBuilder.ApplyConfiguration(new GroupConfiguration());
         }
 
-        public StudentDbContext(DbContextOptions<StudentDbContext> options) : base(options)
+        public StudentDbContext(DbContextOptions options) : base(options)
         {
         }
+        
     }
 }
