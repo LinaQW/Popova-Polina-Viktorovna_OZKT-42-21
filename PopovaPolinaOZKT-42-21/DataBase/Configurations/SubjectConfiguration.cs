@@ -1,54 +1,41 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-//using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using PopovaPolinaOZKT_42_21.DataBase.Helpers;
 using PopovaPolinaOZKT_42_21.DataBase.Models;
 
 namespace PopovaPolinaOZKT_42_21.DataBase.Configurations
 {
-    public class GroupConfiguration : IEntityTypeConfiguration<Group>
+    public class SubjectConfiguration : IEntityTypeConfiguration<Subject>
     {
-        private const string TableName = "Groups";
-        public void Configure(EntityTypeBuilder<Group> builder)
+        private const string TableName = "Subject";
+        public void Configure(EntityTypeBuilder<Subject> builder)
         {
             //Задаем первичный ключ
             builder
-                .HasKey(p => p.GroupId)
+                .HasKey(p => p.SubjectId)
                 .HasName($"pk_{TableName}_Id");
 
             //Для целочисленного первичного ключа задаем автогенерацию (к каждой новой записи будет добавлять +1)
-            builder.Property(p => p.GroupId)
+            builder.Property(p => p.SubjectId)
                     .ValueGeneratedOnAdd();
 
             //Расписываем как будут называться колонки в БД, а так же их обязательность и тд
-            builder.Property(p => p.GroupId)
+            builder.Property(p => p.SubjectId)
                 .HasColumnName("Id")
-                .HasComment("Идентификатор записи группы");
+                .HasComment("Идентификатор записи дисциплины");
 
             //HasComment добавит комментарий, который будет отображаться в СУБД (добавлять по желанию)
-            builder.Property(p => p.GroupName)
+            builder.Property(p => p.SubjectName)
                 .IsRequired()
-                .HasColumnName("GroupName")
+                .HasColumnName("SubjectName")
                 .HasColumnType(ColumnType.String).HasMaxLength(100)
-                .HasComment("Название группы");
+                .HasComment("Название дисциплины");
 
-            builder.Property(p => p.GroupJob)
+            builder.Property(p => p.SubjectDescription)
                 .IsRequired()
-                .HasColumnName("GroupJob")
+                .HasColumnName("SubjectDescription")
                 .HasColumnType(ColumnType.String).HasMaxLength(100)
-                .HasComment("Специальность группы");
-
-            builder.Property(p => p.GroupYear)
-                .IsRequired()
-                .HasColumnName("GroupYear")
-                .HasColumnType(ColumnType.String).HasMaxLength(100)
-                .HasComment("Год поступления");
-
-            builder.Property(p => p.StudentQuantity)
-                .IsRequired()
-                .HasColumnName("StudentQuantity")
-                .HasColumnType(ColumnType.Int)
-                .HasComment("Количество студентов в группе");
+                .HasComment("Направление дисциплины");
 
             builder.Property(p => p.IsDeleted)
                 .IsRequired()

@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-//using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using PopovaPolinaOZKT_42_21.DataBase.Helpers;
 using PopovaPolinaOZKT_42_21.DataBase.Models;
@@ -8,15 +7,13 @@ namespace PopovaPolinaOZKT_42_21.DataBase.Configurations
 {
     public class StudentConfiguration : IEntityTypeConfiguration<Student>
     {
-        //Название таблицы, которое будет отображаться в БД
-        private const string TableName = "cd_student";
-
+        private const string TableName = "Students";
         public void Configure(EntityTypeBuilder<Student> builder)
         {
             //Задаем первичный ключ
             builder
                 .HasKey(p => p.StudentId)
-                .HasName($"pk_{TableName}_student_id");
+                .HasName($"pk_{TableName}_Id");
 
             //Для целочисленного первичного ключа задаем автогенерацию (к каждой новой записи будет добавлять +1)
             builder.Property(p => p.StudentId)
@@ -24,36 +21,43 @@ namespace PopovaPolinaOZKT_42_21.DataBase.Configurations
 
             //Расписываем как будут называться колонки в БД, а так же их обязательность и тд
             builder.Property(p => p.StudentId)
-                .HasColumnName("student_id")
+                .HasColumnName("Id")
                 .HasComment("Идентификатор записи студента");
 
             //HasComment добавит комментарий, который будет отображаться в СУБД (добавлять по желанию)
-            builder.Property(p => p.FirstName)
+            builder.Property(p => p.Surname)
                 .IsRequired()
-                .HasColumnName("c_student_firstname")
+                .HasColumnName("Surname")
                 .HasColumnType(ColumnType.String).HasMaxLength(100)
                 .HasComment("Имя студента");
 
-            builder.Property(p => p.LastName)
+            builder.Property(p => p.Name)
                 .IsRequired()
-                .HasColumnName("c_student_lastname")
+                .HasColumnName("Name")
                 .HasColumnType(ColumnType.String).HasMaxLength(100)
                 .HasComment("Фамилия студента");
 
-            builder.Property(p => p.MiddleName)
-                .HasColumnName("c_student_middlename")
+            builder.Property(p => p.Midname)
+                .IsRequired()
+                .HasColumnName("Midname")
                 .HasColumnType(ColumnType.String).HasMaxLength(100)
                 .HasComment("Отчество студента");
 
             builder.Property(p => p.GroupId)
                 .IsRequired()
-                .HasColumnName("f_group_id")
+                .HasColumnName("GroupId")
                 .HasColumnType(ColumnType.Int)
                 .HasComment("Идентификатор группы");
 
+            builder.Property(p => p.IsDeleted)
+                .IsRequired()
+                .HasColumnName("IsDeleted")
+                .HasColumnType(ColumnType.Bool)
+                .HasComment("Статус удаления");
+
             builder.ToTable(TableName)
                 .HasOne(p => p.Group)
-                .WithMany()
+                .WithMany(t => t.Students)
                 .HasForeignKey(p => p.GroupId)
                 .HasConstraintName("fk_f_group_id")
                 .OnDelete(DeleteBehavior.Cascade);

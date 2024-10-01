@@ -1,8 +1,10 @@
 ﻿namespace PopovaPolinaOZKT_42_21.Filters.StudentFilters
 {
-    public class StudentGroupFilter
+    public class StudentFIOFilter
     {
-        public string? GroupName { get; set; }
+
+        public string? FIO { get; set; }
         public bool StudentIsDeleted = false;
+
     }
 }

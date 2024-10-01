@@ -1,4 +1,4 @@
-//using PopovaPolinaOZKT_42_21.DataBase.Models;
+/*//using PopovaPolinaOZKT_42_21.DataBase.Models;
 
 using PopovaPolinaOZKT_42_21.DataBase.Models;
 
@@ -20,4 +20,4 @@ namespace PopovaPolinaOZKT_42_21.Tests
             Assert.True(result);
         }
     }
-}
+}*/

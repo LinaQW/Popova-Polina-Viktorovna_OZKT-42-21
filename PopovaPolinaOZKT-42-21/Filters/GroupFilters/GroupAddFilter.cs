@@ -1,7 +1,8 @@
-﻿namespace PopovaPolinaOZKT_42_21.Filters.StudentFilters
+﻿/*namespace PopovaPolinaOZKT_42_21.Filters.GroupFilters
 {
     public class GroupAddFilter
     {
         public string GroupName { get; set; }
     }
 }
+*/
